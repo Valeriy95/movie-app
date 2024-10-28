@@ -1,18 +1,47 @@
+$font-family: "Playwrite GB S", cursive
+
 .wrapper
     display: flex
     flex-direction: column
-    background: #faa
-    width: 90%
+    background: #373b69
     margin: auto
-    padding: 20px 0px
+    padding-top: 20px
 
 .seach-wrapper 
-    background: #aaa
+    width: 90%
+    margin: auto
+    background: #373b69
+    height: 60px
     display: flex
     justify-content: end
 
+.input
+    width: 216px
+    height: 40px
+    border-radius: 20px
+    border: 2px solid #22254b
+    font-family: $font-family
+    font-weight: bold
+    font-size: 20px
+    background: #373b69
+
+input:focus
+  outline: none
+  background: #22254b
+  border: 2px solid #22254b
+  color: #fff
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+
+.input::placeholder
+  color: #888888
+  opacity: 1  
+
+.container 
+    background: #22254b
+
 .result-wrapper
-    background: #aff
+    width: 90%
+    margin: auto
     display: flex
     flex-wrap: wrap
     flex-direction: row
@@ -20,18 +49,129 @@
     padding: 30px 0px
     row-gap: 40px
 
+.card-wrapper
+    border: 2px solid #373b69
+    border-radius: 10px
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+    transition: 0.5s
 
 .gallery-img
     width: 300px
     height: 445px
+    display: block
+    border-top-right-radius: 10px
+    border-top-left-radius: 10px
+
+.card-title 
+    margin: 0
+    font-family: $font-family
+    color: #fff
+    padding-left: 5px
+
+.card-year 
+    margin: 0
+    font-family: $font-family
+    color: #fff
+    padding-left: 5px
+    padding-right: 5px
 
 .movie-information 
     width: 300px
+    height: 70px
     display: flex
     justify-content: space-around
+    align-items: center
 
 .pagination
     display: flex
     width: 15%
+    height: 60px
+    align-items: center
     justify-content: space-around
     margin: auto
+
+.last-page
+    font-family: $font-family
+    font-weight: bold
+    color: #fff
+    font-size: 20px
+    transition: 0.5s
+
+.page
+    font-family: $font-family
+    font-weight: bold
+    font-size: 20px
+    color: #fff
+
+.next-page
+    font-family: $font-family
+    font-weight: bold
+    color: #fff
+    font-size: 20px
+    transition: 0.5s
+
+.last-page:hover
+    cursor: pointer
+    color: #111111
+    transition: 0.5s
+
+.next-page:hover 
+    cursor: pointer
+    color: #111111
+    transition: 0.5s
+
+.error
+    display: none
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: fixed
+    width: 100%
+    height: 100%
+    background: #000000
+    top: 0
+    opacity: 0.8
+
+.popup 
+    display: none
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: fixed
+    width: 100%
+    height: 100%
+    background: #000000
+    top: 0
+    opacity: 0.9
+
+.popup:hover 
+    cursor: pointer
+
+.card-wrapper:hover
+    cursor: pointer
+    box-shadow: 0 20px 45px rgba(78, 162, 252, 0.5)
+    border: 2px solid #22254b
+    transition: 0.5s
+
+.popup-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 90%
+    height: 80%
+    border: 2px solid #373b69
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+    border-radius: 10px
+    padding: 10px
+    overflow: auto
+
+.popup-text
+    font-family: $font-family
+    font-size: 20px
+    margin: 10px 0px
+    color: #fff
+
+.error-text
+    font-family: $font-family
+    font-size: 30px
+    color: #fff
